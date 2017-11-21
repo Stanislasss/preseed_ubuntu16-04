@@ -31,7 +31,7 @@ d-i netcfg/choose_interface select eth0
 # Any hostname and domain names assigned from dhcp take precedence over
 # values set here. However, setting the values still prevents the questions
 # from being shown, even if values come from dhcp.
-d-i netcfg/get_hostname string os-lin-phi
+d-i netcfg/get_hostname string os-lin-xxx
 d-i netcfg/get_domain string open-synergy.com
 
 # Disable that annoying WEP key dialog.
@@ -204,8 +204,8 @@ d-i partman/confirm_nooverwrite boolean true
 #d-i passwd/root-password-crypted password [MD5 hash]
 
 # To create a normal user account.
-d-i passwd/user-fullname string Peter Hilber
-d-i passwd/username string phi
+d-i passwd/user-fullname string Foo Bar
+d-i passwd/username string fba
 # Normal user's password, either in clear text
 d-i passwd/user-password password install
 d-i passwd/user-password-again password install
